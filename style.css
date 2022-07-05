@@ -1,0 +1,27 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1rem;
+}
+.section {
+  padding: 0 6rem;
+}
+/* Common style */
+
+/* Media query for mobile device   */
+@media (max-width: 786px) {
+  body {
+    font-size: 0.85rem;
+  }
+  .section {
+    padding: 0 0.5rem;
+  }
+}
