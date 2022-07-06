@@ -71,10 +71,10 @@ img {
 .content > h2 {
   font-size: 3rem;
 }
-/* ==================== Banner Section ========================== */
+/* ==================== Banner ========================== */
 #banner {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./images/donation5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -89,7 +89,7 @@ img {
   max-width: 60%;
   margin: 2rem auto;
 }
-/* ==================== Donate Section ========================== */
+/* ==================== Donate ========================== */
 #donate {
   align-items: center;
 }
@@ -161,7 +161,7 @@ svg {
   background: rgba(238, 205, 221, 0.724);
 }
 
-/* ==============contribute Section =================== */
+/* ==============contribute =================== */
 #contribute {
   gap: 3rem;
   padding: 4rem 3rem;
@@ -188,6 +188,21 @@ svg {
 .contribute_img {
   height: 400px;
 }
+/* ============================ Partner=================== */
+#partner {
+  background: #eee;
+  padding: 4rem 0;
+}
+.partner_logo {
+  gap: 2rem;
+  max-width: 920px;
+  margin: 2rem auto;
+}
+.partner_logo > div {
+  height: 25px;
+  width: 120px;
+}
+
 /* ==============================Subscribe============== */
 .subscribe_form {
   padding: 4rem;
@@ -210,7 +225,8 @@ form > input {
 }
 .subscribe_btn {
   border-radius: 0;
-  padding: 0.87rem 2rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
 }
 /* ==============================Footer================== */
 footer {
