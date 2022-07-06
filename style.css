@@ -1,4 +1,4 @@
-/* Removed default style */
+/* ==================== Removed default style ========================== */
 *,
 ::after,
 ::before {
@@ -6,9 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  /* scroll-behavior: smooth; */
-}
+
 body {
   font-size: 1rem;
   font-family: "Inter", sans-serif;
@@ -21,11 +19,13 @@ button {
   border-radius: 4px;
   margin: 0 auto;
 }
-
-h1 {
-  font-size: 3rem;
+img {
+  width: 100%;
+  display: block;
+  height: 100%;
 }
-/* Flex Box style */
+
+/* Common style */
 .FC {
   display: flex;
   justify-content: center;
@@ -44,33 +44,7 @@ h1 {
   display: flex;
   flex-direction: column;
 }
-
-/* Section style  */
-
-.section {
-  padding: 0 6rem;
-  margin: 0 auto;
-}
-
-/* Hero Section */
-.hero_section {
-  min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("./images/donation5.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  color: aliceblue;
-}
-.hero_section_content h1 {
-  font-size: 4rem;
-  line-height: 1.1;
-}
-.hero_section_content p {
-  max-width: 60%;
-  margin: 2rem auto;
-}
-.btn_donate {
+.btn {
   font-size: 1.2rem;
   background-color: crimson;
   color: white;
@@ -78,26 +52,52 @@ h1 {
   font-weight: bold;
   max-width: 300px;
 }
-
-.donate_section {
+.section {
+  max-width: 1240px;
+  margin: 0 auto;
   padding: 4rem 0;
+}
+.content {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.content > p {
+  max-width: 70%;
+  color: gray;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.content > h2 {
+  font-size: 3rem;
+}
+/* ==================== Banner Section ========================== */
+#banner {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./images/donation5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: aliceblue;
+}
+.banner_content h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+}
+.banner_content p {
+  max-width: 60%;
+  margin: 2rem auto;
+}
+/* ==================== Donate Section ========================== */
+#donate {
+  align-items: center;
 }
 
-.donate_section > p {
-  max-width: 50%;
-  margin: 1.2rem auto;
-  color: gray;
-}
 .amount {
-  margin-top: 1.5rem;
-  max-width: 1000px;
-  display: flex;
   align-self: center;
   gap: 1rem;
+  padding: 2rem 0;
 }
 .amount li {
   list-style: none;
@@ -108,17 +108,18 @@ h1 {
   color: gray;
   border: 3px solid transparent;
   cursor: pointer;
+  background: rgba(238, 238, 238, 0.585);
 }
-.others_amount {
-  width: 900px;
-  margin: 3rem auto;
+.other_amount {
+  width: 920px;
+  margin: 2rem 0;
   color: gray;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   border: none;
   font-weight: bold;
   border-bottom: 1px solid gray;
-  padding: 0.5rem 0;
+  padding: 0.8rem 0;
   outline: none;
   background: #eee;
 }
@@ -127,33 +128,29 @@ h1 {
   border: 3px solid crimson;
   color: crimson;
 }
-.amount li:hover {
-  border: 3px solid gray;
-  background: azure;
+
+/* ================================= Donate Plan ================== */
+
+#donate_plan {
+  padding: 0 3rem;
 }
-/* ================================= Plan ================== */
-.plan_section,
-.contribute_section {
-  max-width: 1240px;
-  margin: 0 auto;
+.container {
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
-.plan_section > div {
-  display: flex;
-  flex-direction: column;
-}
-.plan_section .container {
+.card {
   padding: 2rem;
-  text-align: start;
-  border-radius: 0.25rem;
 }
-.plan_section .container > h3 {
-  padding: 1.5rem 0;
+
+svg {
+  margin-top: 1rem;
+  width: 4rem;
+  height: 4rem;
 }
-.plan_section .container > p {
-  color: gray;
+.card h3 {
+  padding: 1rem 0;
 }
+
 .foods {
   background: rgba(232, 233, 190, 0.753);
 }
@@ -163,39 +160,43 @@ h1 {
 .education {
   background: rgba(238, 205, 221, 0.724);
 }
-.icon {
-  width: 40px;
-  font-size: 3rem;
-}
-/* ==============contribute Section =================== */
 
-.contribute_section > div {
+/* ==============contribute Section =================== */
+#contribute {
+  gap: 3rem;
+  padding: 4rem 3rem;
 }
-.contribute_articale {
+#contribute > div {
+  flex: 1;
+}
+
+.contribute_article {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.contribute_articale > p {
+.contribute_article h2 {
+  font-size: 2.5rem;
+}
+.contribute_article > p {
   padding: 1rem 0;
   color: gray;
 }
-.contribute_articale > button {
+.contribute_article > button {
   margin: 0;
+}
+.contribute_img {
+  height: 400px;
 }
 /* ==============================Subscribe============== */
 .subscribe_form {
   padding: 4rem;
-  width: 900px;
-  background: #deb887;
+  width: 920px;
+  background: #f1f0a8;
   margin: 2rem auto;
 }
 .subscribe_form > form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
+  min-width: 500px;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -218,12 +219,7 @@ footer {
   color: white;
   align-items: center;
 }
-/* Media query for mobile device*/
-@media (max-width: 786px) {
-  body {
-    font-size: 0.85rem;
-  }
-  .section {
-    padding: 0 0.5rem;
-  }
+footer h2 {
+  color: crimson;
+  padding: 1rem 0;
 }
