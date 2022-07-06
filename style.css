@@ -1,4 +1,4 @@
-/* Default style */
+/* Removed default style */
 *,
 ::after,
 ::before {
@@ -7,16 +7,22 @@
   box-sizing: border-box;
 }
 html {
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 body {
   font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 button {
   border: none;
   cursor: pointer;
   padding: 0.5rem 2rem;
   border-radius: 4px;
+  margin: 0 auto;
+}
+p {
+  font-size: 1.2rem;
 }
 /* Flex Box style */
 .FC {
@@ -39,14 +45,88 @@ button {
 }
 
 /* Section style  */
+
 .section {
   padding: 0 6rem;
-}
-.hero_section {
-  min-height: 100vh;
+  margin: 0 auto;
 }
 
-/* Media query for mobile device   */
+/* Hero Section */
+.hero_section {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./images/donation5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: aliceblue;
+}
+.hero_section_content h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+}
+.hero_section_content p {
+  max-width: 60%;
+  margin: 2rem auto;
+}
+.btn_donate {
+  font-size: 1.2rem;
+  background-color: crimson;
+  color: white;
+  padding: 0.8rem 2rem;
+  font-weight: bold;
+  max-width: 220px;
+}
+
+.donate_section {
+  padding: 4rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.donate_section h1 {
+  font-size: 3rem;
+}
+.donate_section p {
+  max-width: 50%;
+  margin: 1.2rem auto;
+  color: gray;
+}
+.amount {
+  margin-top: 1.5rem;
+  max-width: 900px;
+  display: flex;
+  align-self: center;
+}
+.amount li {
+  list-style: none;
+  padding: 2.5rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 900;
+  border-radius: 10px;
+  color: gray;
+}
+.others_amount {
+  width: 900px;
+  margin: 3rem auto;
+  color: gray;
+  text-align: center;
+  font-size: 1.5rem;
+  border: none;
+  font-weight: bold;
+  border-bottom: 1px solid gray;
+  padding: 0.5rem 0;
+  outline: none;
+}
+.others_amount:hover {
+  background: #eee;
+}
+.amount .active {
+  border: 3px solid crimson;
+  color: crimson;
+}
+/* Media query for mobile device*/
 @media (max-width: 786px) {
   body {
     font-size: 0.85rem;
