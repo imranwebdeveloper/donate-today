@@ -21,8 +21,9 @@ button {
   border-radius: 4px;
   margin: 0 auto;
 }
-p {
-  font-size: 1.2rem;
+
+h1 {
+  font-size: 3rem;
 }
 /* Flex Box style */
 .FC {
@@ -75,7 +76,7 @@ p {
   color: white;
   padding: 0.8rem 2rem;
   font-weight: bold;
-  max-width: 220px;
+  max-width: 300px;
 }
 
 .donate_section {
@@ -85,10 +86,8 @@ p {
   flex-direction: column;
   justify-content: center;
 }
-.donate_section h1 {
-  font-size: 3rem;
-}
-.donate_section p {
+
+.donate_section > p {
   max-width: 50%;
   margin: 1.2rem auto;
   color: gray;
@@ -118,13 +117,100 @@ p {
   border-bottom: 1px solid gray;
   padding: 0.5rem 0;
   outline: none;
-}
-.others_amount:hover {
   background: #eee;
 }
+
 .amount .active {
   border: 3px solid crimson;
   color: crimson;
+}
+
+/* ================================= Plan ================== */
+.plan_section,
+.contribute_section {
+  max-width: 1240px;
+  margin: 0 auto;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.plan_section > div {
+  display: flex;
+  flex-direction: column;
+}
+.plan_section .container {
+  padding: 2rem;
+  text-align: start;
+  border-radius: 0.25rem;
+}
+.plan_section .container > h3 {
+  padding: 1.5rem 0;
+}
+.plan_section .container > p {
+  color: gray;
+}
+.foods {
+  background: rgba(232, 233, 190, 0.753);
+}
+.shelter {
+  background: rgba(226, 241, 164, 0.649);
+}
+.education {
+  background: rgba(238, 205, 221, 0.724);
+}
+.icon {
+  width: 40px;
+  font-size: 3rem;
+}
+/* ==============contribute Section =================== */
+
+.contribute_section > div {
+}
+.contribute_articale {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contribute_articale > p {
+  padding: 1rem 0;
+  color: gray;
+}
+.contribute_articale > button {
+  margin: 0;
+}
+/* ==============================Subscribe============== */
+.subscribe_form {
+  padding: 4rem;
+  width: 900px;
+  background: #deb887;
+  margin: 2rem auto;
+}
+.subscribe_form > form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+form > input {
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.subscribe_btn {
+  border-radius: 0;
+  padding: 0.87rem 2rem;
+}
+/* ==============================Footer================== */
+footer {
+  padding: 2rem;
+  background: rgb(15, 15, 15);
+  color: white;
+  align-items: center;
 }
 /* Media query for mobile device*/
 @media (max-width: 786px) {
